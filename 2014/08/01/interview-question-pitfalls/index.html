@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Raleway' rel='stylesheet' type='text/css'>
+    <title>Interview Question Pitfalls - Lee Dohm's Blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml"/>
+    <link rel="icon" type="image/png" href="/favicon-icon.png"/>
+
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+
+    <!-- Site -->
+    <link href="/stylesheets/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- MathJax -->
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-17382346-2', 'lee-dohm.com');
+  ga('send', 'pageview');
+
+</script>
+    <meta property="og:title" content="Interview Question Pitfalls"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.lee-dohm.com/2014/08/01/interview-question-pitfalls/"/>
+<meta property="og:image" content="http://www.lee-dohm.com/favicon-icon.png"/>
+<meta property="og:description" content=""/>
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-custom" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Lee Dohm</a>
+        <p class="navbar-text">Games and Technology Should Include EVERYone</p>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/archives">Archive</a></li>
+          <li><a href="/feed.xml">Feed</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="/about">About Lee</a></li>
+              <li><a href="/this-blog">About This Blog</a></li>
+              <li><a href="/appearances">Appearances</a></li>
+              <li><a href="/colophon">Colophon</a></li>
+              <li><a href="/disclaimer">Disclaimers</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<div class="content">
+  <h1><a class="title" href="/2014/08/01/interview-question-pitfalls/"><p>Interview Question Pitfalls</p>
+</a></h1>
+  <h4 class="dateline">
+    August 01, 2014
+    •
+    <a href="/2014/08/01/interview-question-pitfalls/"><span class="octicon octicon-link"></span></a>
+  </h4>
+
+  <p>I’ve spent a lot of time over the last ten years or so interviewing programming candidates for large corporations. One of the things that it seems people like to try as an exercise is to come up with <a href="http://www.toptal.com/ruby/interview-questions">“great programming interview questions”</a>. The thing is, unless you’ve done a lot of interviewing and hiring of programmers, you’re probably coming up with really bad ones. I’ll try to break down some of the common pitfalls that I see first time interview question designers<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> falling into.</p>
+
+<h2>The “How Much Do You <em>Really</em> Know About the Language” Question</h2>
+
+<p>These are the questions where one is asked to recall some obscure edge-case of whatever is the interviewer’s pet language. An example of this kind of question is, “Can you declare a <code>virtual static</code> function in C++? Why or why not?”<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
+
+<p>Let’s face it, whether we are the “language lawyer” on the team or not, most of us for one reason or another respect the guy that can quote chapter and verse of the C++ Language Specification. Or the gal that can rattle off the exact differences between a block, proc or lambda in Ruby without looking it up first. And a lot of times, the ones that can do this are really valued members of the team. So why not ask questions like these in interviews when trying to find great programmers? Two reasons:</p>
+
+<ol>
+<li>Correlation does not equal causation</li>
+<li>Their arcane knowledge of the language is almost never why that person is super valuable to the team</li>
+</ol>
+
+<p>Yes, many of the folks that have this kind of amazing recall are assets to the team. But remember the old joke:</p>
+
+<blockquote>
+<p><strong>First Guy:</strong> It says here that people who read the Wall Street Journal make more money on average!</p>
+
+<p><strong>Second Guy:</strong> Where do I get a subscription?</p>
+</blockquote>
+
+<p>Getting a subscription to the Wall Street Journal doesn’t magically grant you a higher salary. Memorizing the dictionary doesn’t make you a better writer. And learning the language specification doesn’t make you a better programmer. But becoming a better programmer may help you learn the language specification <img alt="grinning" src="/images/emoji/grinning.png" class="emoji" /> And spending all this time becoming a better programmer is what makes one a better team member. The encyclopedia-brain is just a fringe benefit <img alt="wink" src="/images/emoji/wink.png" class="emoji" /></p>
+
+<h2>The “One-Way Hash Function” Question</h2>
+
+<p>This is the question that sounds hard. But if you know the trick (or have been given the question in interviews before), it is trivial.<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup> An example is:</p>
+
+<blockquote>
+<p>Count the number of set bits in a 32-bit integer.</p>
+</blockquote>
+
+<p>One of the simplest to remember solutions<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> for this question that is also one of the more efficient is:</p>
+<div class="highlight"><pre><a name="line-1"></a><span class="kt">long</span> <span class="nf">count_bits</span><span class="p">(</span><span class="kt">long</span> <span class="n">number</span><span class="p">)</span> <span class="p">{</span>
+<a name="line-2"></a>    <span class="c1">// Accumulates the total bits set in `number`</span>
+<a name="line-3"></a>    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">count</span><span class="p">;</span>
+<a name="line-4"></a>
+<a name="line-5"></a>    <span class="c1">// This loop initializes the count, loops only until all bits have been cleared and</span>
+<a name="line-6"></a>    <span class="c1">// increments the count each time through the loop.</span>
+<a name="line-7"></a>    <span class="k">for</span> <span class="p">(</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">number</span><span class="p">;</span> <span class="n">count</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+<a name="line-8"></a>        <span class="c1">// Clear the least significant bit set</span>
+<a name="line-9"></a>        <span class="n">number</span> <span class="o">&amp;=</span> <span class="n">number</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
+<a name="line-10"></a>    <span class="p">}</span>
+<a name="line-11"></a>
+<a name="line-12"></a>    <span class="k">return</span> <span class="n">count</span><span class="p">;</span>
+<a name="line-13"></a><span class="p">}</span>
+</pre></div>
+<p>If you can just remember the magic trick of how to clear only the least significant bit, then the rest is just writing a loop and returning a value. Easy peasy. All this proves is that the candidate knows a cool bit of magic or that they prepared for the interview by looking up minutia, not that they know how to write real code.</p>
+
+<h2>The “Puzzle” Question</h2>
+
+<p>The canonical puzzle question is of course, <a href="http://www.amazon.com/How-Would-Move-Mount-Fuji-ebook/dp/B000Q67H6I/">“How would you move Mount Fuji?”</a> These questions were a really big deal during Microsoft’s heyday, when everyone was trying to emulate them to figure out the secret of their success. Basically, these questions are supposed to get the candidate to display to the interviewer how they think, how they attack a problem and how they handle ambiguous requirements.</p>
+
+<p>These questions are really fun for some people, but once again, they aren’t testing whether or not you can actually write code, design a system or even puzzle out an algorithm. They only test a very simple-to-learn formula for reasoning out a vague solution to a problem. Whether you call it “napkin estimating” or <a href="http://en.wikipedia.org/wiki/Back-of-the-envelope_calculation">“back of the envelope calculation”</a> or just “swag”, it is not a quality that good programmers necessarily have or that bad programmers won’t have.</p>
+
+<h2>So What Makes a Great Interview Question?</h2>
+
+<p>What is it you want to measure when you interview a programmer? Well, among other things, you want to measure their ability to write code. So how do you test that? You have them <em>write code</em>! And even though we would like to think that most of what we do is awesome stuff like figuring out cool and innovative new uses for <a href="https://www.cs.sunysb.edu/%7Eskiena/combinatorica/animations/dijkstra.html">Dijkstra’s Algorithm for calculating a minimum spanning tree</a>, but really the majority of the code we write is just simple, straight-line code with a lot of loops and conditions.<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup> So we really should be testing if people can do that first!</p>
+
+<p>Jeff Attwood, also known as <a href="http://blog.codinghorror.com">Coding Horror</a>, one of the main folks behind <a href="http://www.stackexchange.com">Stack Exchange</a> and <a href="http://www.discourse.org">Discourse</a>, popularized the use of the <a href="http://blog.codinghorror.com/why-cant-programmers-program/">FizzBuzz</a> class of questions in programming interviews in a couple blog posts where he relayed a tale that the vast majority of programming candidates just can’t write <em>a single line of code</em>. Ever since I read that blog article, I’ve used FizzBuzz and other questions like it as a basic “Do I need to bother giving you a real programming question?” test.</p>
+
+<p>How do I come up with these questions? Well, the programming interview questions I use generally have the following qualities:</p>
+
+<ol>
+<li>They require the candidate to write code in whatever language they feel most comfortable.</li>
+<li>They are very simple-to-describe problems with <em>no</em> ambiguity. One or two sentences tops.</li>
+<li>They have multiple special cases. These are not “write a <code>for</code> loop and you’re done” questions.</li>
+<li>They do not require any special domain knowledge or if they do, I have a cheat sheet prepared and it is simple enough that it can be learned completely in less than five minutes.</li>
+<li>There are multiple good solutions to the problem, depending on the requirements. In other words, do I have unlimited memory but speed is precious or vice versa?</li>
+</ol>
+
+<p>As an example, one of the programming questions that I use that fits these criteria is:</p>
+
+<blockquote>
+<p>Write a function that accepts an integer as input and returns a string containing the Roman Numeral representation of that integer.</p>
+</blockquote>
+
+<p>I have a cheat sheet that explains how Roman Numerals work. I also scope it to just the integers between 1 and 3,999 if the candidate asks.<sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup> They don’t even necessarily have to finish it in the time available. I can generally see how it is going to go after they spend a little bit of time on it. In my experience, this has been a very good indicator on the candidate’s programming ability. The ones that have done well have generally been capable programmers.<sup id="fnref7"><a href="#fn7" rel="footnote">7</a></sup></p>
+
+<p>And that’s what we’re looking for, right?</p>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>Now, keep in mind that all of these types of questions can (and sometimes are) used by jerk interviewers as basically a way to reassure themselves of their intellectual superiority. But I feel like more often the person employing one of these just doesn’t know better questions to ask. This is why I’m writing this article. <a href="#fnref1" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn2">
+<p>The answer to the first part of the question is “no” and the answer to the second part is that they’re mutually exclusive. <code>virtual</code> requires an object instance and <code>static</code> precludes the use of an object instance. <img alt="laughing" src="/images/emoji/laughing.png" class="emoji" /> <a href="#fnref2" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn3">
+<p>Just like a <a href="http://en.wikipedia.org/wiki/One-way_hash_function">one-way hash function</a> is trivial to compute in one direction but hard or impossible to go the reverse direction from the output back to the original input. <a href="#fnref3" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn4">
+<p>Paraphrased from <a href="http://stackoverflow.com/a/109036">this Stack Overflow answer</a> <a href="#fnref4" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn5">
+<p><code>for</code> loops, <code>while</code> loops, <code>if-then-else</code> and <code>switch</code> statements <a href="#fnref5" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn6">
+<p>If it is an entry-level candidate, I’ll volunteer that the range of numbers is scoped and why. <a href="#fnref6" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn7">
+<p>And the ones that have flopped and been hired anyway generally have been poor performers in the programming arena. <a href="#fnref7" rev="footnote">↩</a></p>
+</li>
+
+</ol>
+</div>
+
+</div>
+</body></html>
+
+          </div>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+          <hr/>
+          <div class="text-center">
+            <p>
+              <a href="mailto:lee@lee-dohm.com"><span class="octicon octicon-mail"></span></a>&nbsp;&nbsp;
+              <a href="https://github.com/lee-dohm"><span class="octicon octicon-mark-github"></span></a>&nbsp;&nbsp;
+              <a href="http://stackoverflow.com/users/1954/lee"><i class="fa fa-stack-exchange"></i></a>&nbsp;&nbsp;
+              <a href="https://twitter.com/leedohm"><i class="fa fa-twitter"></i></a>
+            </p>
+            <p>
+              Copyright &copy; 2010-2016 by Lee Dohm
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/javascripts/lightbox.min.js"></script>
+    <script src="/javascripts/bigfoot.min.js"></script>
+    <script type="text/javascript">
+      $.bigfoot();
+    </script>
+  </body>
+</html>
